@@ -256,7 +256,7 @@ iframe {
   min-height: 380px;
 }
 
-/* ----------- El pie de página o footer ----------- */
+/* ----------- El pie de página o el footer ----------- */
 footer {
   background-color: #033233;
   color: #ddd;
@@ -331,7 +331,7 @@ nav a {
 
 /*AE, Galería*/
 
-/* ----------- Nueva Galería tipo Slider ----------- */
+/* ----------- Galería tipo slider que mandó e prof ----------- */
 .galeria-slider-wrapper {
   position: relative;
   width: 100%;
