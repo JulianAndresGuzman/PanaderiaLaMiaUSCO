@@ -1,0 +1,192 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/styles.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Panadería la Mía, palermo" />
+  <meta name="keywords" content="Panes,pasteles, buñuelos y más" />
+  <title>Panadería La Mía</title>
+</head>
+
+<body>
+
+  <Header />
+
+  <main>
+
+
+
+
+    <!-- ========== INICIO ========== -->
+    <section id="inicio">
+      <img src="/img/PanaderiaWilmer.jpg" alt="Panadería la Mía" />
+      <div class="bloque-inicio">
+        <h1>Bienvenidos a la panadería la Mía</h1>
+        <p>Los mejores panes y buñuelos de Palermo.</p>
+        <a href="#nosotros" class="boton boton-aqua">Ver más</a>
+      </div>
+    </section>
+
+
+    
+    <!-- ========== NOSOTROS ========== -->
+    <section id="nosotros" class="seccion">
+      <div class="container">
+        <p>
+          En <strong>Panadería la Mía</strong> Hacemos panes de gran calidad, wilmer, un famoso panadero entre su grupo social, desarrolla sus grandes habilidades de pan aquí.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section id="servicios" class="seccion">
+      <div class="container">
+        <div class="row">
+
+          <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="/img/pan.jpg" alt="Gran variedad de panes">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Panes</h3>
+                <p>Gran variedad de panes, desde 500 pesos hasta 5000</p>
+                <a href="/panes" class="boton boton-blanco">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="/img/bebidas.jpg" alt="Bebidas pal pan">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Bebidas</h3>
+                <p>Gran variedad de bebidas para acompañar tu pan</p>
+                <a href="/bebidas" class="boton boton-blanco">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="/img/Pasteles papa.jpg" alt="Buñuelos, pasteles y empanadas">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Buñuelos, pasteles y empanadas</h3>
+                <p>Buñuelos, pasteles de papa, huevo, carne, arroz y empanadas para tu cena.</p>
+                <a href="/pasteles-buñuelos-empanadas" class="boton boton-blanco">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALERÍA ========== -->
+    <section id="galeria" class="seccion">
+      <div class="container">
+        <h2 style="text-align:center; margin-bottom:30px; color:rgb(70,165,135); font-size:32px;">
+          Galería
+        </h2>
+
+        <div class="galeria-slider-wrapper">
+
+          <div class="galeria-slider-container">
+            <div class="galeria-slider" id="sld">
+               <div class="galeria-box"><img src="/img/wilmer1.jpg"></div>
+              <div class="galeria-box"><img src="/img/wilmer2.jpg"></div>
+              <div class="galeria-box"><img src="/img/wilmer3.jpg"></div>
+              <div class="galeria-box"><img src="/img/wilmer4.jpg"></div>
+              <div class="galeria-box"><img src="/img/wilmer5.jpg"></div>
+              <div class="galeria-box"><img src="/img/wilmer6.jpg"></div>
+
+            </div>
+          </div>
+
+          <span class="galeria-nav galeria-prev" onclick="fPrevious()"><</span>
+          <span class="galeria-nav galeria-next" onclick="fNext()">></span>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" class="seccion">
+      <div class="container">
+        <h2>Contáctanos</h2>
+
+        <div class="row">
+          <div class="columna columna-50">
+            <form>
+              <div class="form-block">
+                <input type="text" name="nombre" placeholder="Nombre" class="form-control">
+              </div>
+              <div class="form-block">
+                <input type="email" name="email" placeholder="Correo" class="form-control">
+              </div>
+              <div class="form-block">
+                <textarea name="mensaje" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="form-block">
+                <input type="submit" value="Enviar" class="boton boton-aqua">
+              </div>
+            </form>
+          </div>
+
+          <div class="columna columna-50">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1355.8953238833315!2d-75.44034481326882!3d2.8953109986903303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b0e9c40f2b9b5%3A0xa0af6eb2e08ca4ac!2sCl.%2021%20%23%2015-4%2C%20Palermo%2C%20La%20Vega%2C%20Palermo%2C%20Huila!5e1!3m2!1ses!2sco!4v1763324329328!5m2!1ses!2sco" 
+              width="600" height="450" style="border:0;" allowfullscreen="" 
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+  <!---Bueno, ponemos el script acá a ver que tal -->
+<script>
+window.addEventListener('load', function() {    
+    let showed_box = 0;
+    const slider = document.getElementById('sld');
+    
+              
+    window.fNext = function(){
+        showed_box -= 500;
+        
+        if(showed_box < -2000) {
+            showed_box = 0;
+        }
+                slider.style.transform = "translateX(" + showed_box + "px)";
+    }
+
+    window.fPrevious = function(){
+        showed_box += 500;
+        
+        if(showed_box > 0) {
+            showed_box = -2000;
+        }
+                slider.style.transform = "translateX(" + showed_box + "px)";
+    }
+    
+});
+</script>
+
+
+</body>
+</html>

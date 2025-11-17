@@ -1,0 +1,103 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/styles.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Panes | Panadería la Mía</title>
+  </head>
+
+  <body>
+    <Header />
+    <main class="seccion">
+      <div class="container">
+        <h1 style="color: rgb(70,165,135); text-align:center; margin-bottom:30px;">
+          Panes disponibles
+        </h1>
+
+        <div class="row">
+    <!-- ========== SERVICIOS ========== -->
+    <section id="servicios" class="seccion">
+      <div class="container">
+        <div class="row">
+
+          <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="/img/pan-coco.jpg" alt="Gran variedad de panes">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Pan coco</h3>
+                <p>$500</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="/img/mojicon.jpg" alt="Mojicon">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Mojicon</h3>
+                <p>$1000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="img/pan-rollo.jpg" alt="Buñuelos, pasteles y empanadas">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Pan Rollo</h3>
+                <p>$1500</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="img/pan-doble-queso.webp" alt="Buñuelos, pasteles y empanadas">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Pan Con Doble de Queso</h3>
+                <p>$3000</p>
+              </div>
+            </div>
+          </div>
+
+
+
+           <div class="columna columna-33">
+            <div class="bloque-servicio">
+              <div class="bloque-img-servicio">
+                <img src="img/mojicon-grande.jpg" alt="Mojicon Grande">
+              </div>
+              <div class="bloque-contenido-servicio">
+                <h3>Mojicon Grande</h3>
+                <p>$2500</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>
