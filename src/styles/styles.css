@@ -1,5 +1,6 @@
+/* -------------------- RESET GENERAL -------------------- */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Hace que padding y border no aumenten el tamaño total */
 }
 
 body {
@@ -7,24 +8,25 @@ body {
   font-size: 15px;
   margin: 0;
   color: #222;
-  background-color: #fafafa;
+  background-color: #fafafa; /* Fondo gris claro */
 }
 
-/* ----------- Header o cabeza de página ----------- */
+
+/* -------------------- HEADER -------------------- */
 header {
   padding: 15px 0;
-  position: fixed;
+  position: fixed; /* Se mantiene en la parte superior */
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10; /* Para que quede encima del contenido */
   background-color: white;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra inferior */
 }
 
 header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
   align-items: center;
   width: 1140px;
   margin: 0 auto;
@@ -32,22 +34,23 @@ header .container {
 }
 
 header .logo {
-  width: 60px;
+  width: 60px; /* Tamaño del logo */
 }
 
 header nav a {
-  color: rgb(81, 154, 154);
+  color: rgb(81, 154, 154); /* Color celeste */
   text-decoration: none;
   margin: 0 12px;
   font-weight: 600;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* Suaviza el hover */
 }
 
 header nav a:hover {
   color: rgb(28, 51, 51);
 }
 
-/* ----------- Botones ----------- */
+
+/* -------------------- BOTONES -------------------- */
 .boton {
   display: inline-block;
   text-align: center;
@@ -81,8 +84,10 @@ header nav a:hover {
   color: white;
 }
 
+
+/* -------------------- ESTRUCTURA GENERAL -------------------- */
 .seccion {
-  padding-top: 100px;
+  padding-top: 100px; /* Para evitar el header fijo */
   padding-bottom: 60px;
 }
 
@@ -95,7 +100,7 @@ header nav a:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -15px; /* Para compensar padding */
 }
 
 .columna {
@@ -105,6 +110,7 @@ header nav a:hover {
 .columna-33 {
   width: 33.33%;
 }
+
 .columna-25 {
   width: 33.33%;
   position: relative;
@@ -114,16 +120,18 @@ header nav a:hover {
   width: 50%;
 }
 
+
+/* -------------------- INICIO (PORTADA) -------------------- */
 #inicio {
   position: relative;
 }
 
 #inicio img {
   width: 100%;
-  height: 120vh;
+  height: 120vh; /* Imagen más alta que la pantalla */
   object-fit: cover;
   display: block;
-  filter: brightness(0.7);
+  filter: brightness(0.7); /* Oscurece la imagen para resaltar el texto */
 }
 
 #inicio .bloque-inicio {
@@ -138,7 +146,7 @@ header nav a:hover {
 #inicio .bloque-inicio h1 {
   color: white;
   font-size: 40px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* Sombra para mejorar legibilidad */
 }
 
 #inicio .bloque-inicio p {
@@ -147,7 +155,8 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 
-/* ----------- Nosotros ----------- */
+
+/* -------------------- SECCIÓN NOSOTROS -------------------- */
 #nosotros {
   background-image: url('img/fondo-nosotros.jpg');
   background-size: cover;
@@ -158,14 +167,15 @@ header nav a:hover {
 #nosotros p {
   color: white;
   font-size: 18px;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(0,0,0,0.55); /* Fondo traslúcido */
   padding: 20px;
   border-radius: 10px;
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* ----------- Los servivcios ----------- */
+
+/* -------------------- SERVICIOS -------------------- */
 #servicios .bloque-servicio {
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -176,7 +186,7 @@ header nav a:hover {
 }
 
 #servicios .bloque-servicio:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Efecto elevación */
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -184,7 +194,10 @@ header nav a:hover {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  
 }
+
+
 
 #servicios .bloque-contenido-servicio {
   padding: 20px;
@@ -200,7 +213,8 @@ header nav a:hover {
   color: #444;
 }
 
-/* ----------- La Galería ----------- */
+
+/* -------------------- GALERÍA -------------------- */
 #galeria h4 {
   margin-top: 10px;
   color: #333;
@@ -218,7 +232,8 @@ header nav a:hover {
   border-radius: 10px;
 }
 
-/* ----------- Contactos ----------- */
+
+/* -------------------- CONTACTO -------------------- */
 #contacto h2 {
   color: rgb(0, 200, 255);
   text-align: center;
@@ -256,7 +271,8 @@ iframe {
   min-height: 380px;
 }
 
-/* ----------- El pie de página o el footer ----------- */
+
+/* -------------------- FOOTER -------------------- */
 footer {
   background-color: #033233;
   color: #ddd;
@@ -306,17 +322,22 @@ footer .logo-footer {
   margin-top: 30px;
 }
 
+
+/* -------------------- RESPONSIVE -------------------- */
 @media (max-width: 900px) {
   .container {
     width: 95%;
   }
+
   .columna-50,
   .columna-33 {
-    width: 100%;
+    width: 100%; /* Columnas se vuelven una sola */
   }
+
   header .container {
-    flex-direction: column;
+    flex-direction: column; /* Logo arriba, menú abajo */
   }
+
   #inicio .bloque-inicio {
     width: 90%;
   }
@@ -327,11 +348,7 @@ nav a {
 }
 
 
-
-
-/*AE, Galería*/
-
-/* ----------- Galería tipo slider que mandó e prof ----------- */
+/* -------------------- SLIDER DE GALERÍA -------------------- */
 .galeria-slider-wrapper {
   position: relative;
   width: 100%;
@@ -346,7 +363,7 @@ nav a {
 
 .galeria-slider {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease; /* Animación del desplazamiento */
 }
 
 .galeria-box {
@@ -393,3 +410,76 @@ nav a {
   }
 }
 
+
+/*Bebidas. TOcó cambiarlo porque se desalineaban bastante las imagenes*/
+#bebidas .bloque-servicio {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+#bebidas .bloque-servicio:hover {
+  transform: translateY(-5px); /* Efecto elevación */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#bebidas .bloque-img-servicio img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  
+}
+
+
+/*Los comentarios, vamos a ver que tal, para darle duro al pan*/
+.comentario-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 200px;
+}
+
+.comentario-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.comentario-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #f4b400; /* color tipo estrellas */
+}
+
+.comentario-card p {
+  color: #333;
+  font-size: 16px;
+}
+
+.comentario-autor {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: rgb(70,165,135);
+}
+
+/* Formulario de comentarios */
+.comentario-form .form-control {
+  font-size: 16px;
+}
+
+.comentario-form textarea {
+  height: 120px;
+}
+
+
+/*Para ajustar el tamaño de todos los precios*/
+.bloque-contenido-servicio p {
+  font-size: 20px;
+  font-weight: bold;
+}

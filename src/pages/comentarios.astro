@@ -1,0 +1,119 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/styles.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Comentarios - Panadería La Mía</title>
+</head>
+
+<body>
+
+  <Header />
+
+  <main class="seccion">
+    <div class="container">
+
+      <h2 style="text-align:center; margin-bottom:30px; color:rgb(70,165,135); font-size:32px;">
+        Comentarios de Nuestros Clientes
+      </h2>
+
+      <!-- ====== LISTA DE COMENTARIOS ====== -->
+      <div class="row">
+
+        <!-- Comentario 1 -->
+        <div class="columna columna-33">
+          <div class="comentario-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Los mejores buñuelos de todo Palermo, frescos y crocantes. Wilmer es un crack."</p>
+            <span class="comentario-autor">— Juan Martínez</span>
+          </div>
+        </div>
+
+        <!-- Comentario 2 -->
+        <div class="columna columna-33">
+          <div class="comentario-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"El pan aliñado queda perfecto siempre. Compramos aquí todos los días."</p>
+            <span class="comentario-autor">— Familia Rodríguez</span>
+          </div>
+        </div>
+
+        <!-- Comentario 3 -->
+        <div class="columna columna-33">
+          <div class="comentario-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Wilmer es increible, apenas llegué y ya sabía lo que iba a pedir, su número."</p>
+            <span class="comentario-autor">— Laura Gómez</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ====== OTROS COMENTARIOS ====== -->
+      <div class="row">
+
+        <div class="columna columna-33">
+          <div class="comentario-card">
+            <h3>⭐⭐⭐⭐</h3>
+            <p>"Buena atención y precios justos. El pan de chocolate es mi favorito."</p>
+            <span class="comentario-autor">— Andrés Ruiz</span>
+          </div>
+        </div>
+
+        <div class="columna columna-33">
+          <div class="comentario-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Wilmer siempre saluda con buena energía. Da gusto comprar acá."</p>
+            <span class="comentario-autor">— Diana Velasco</span>
+          </div>
+        </div>
+
+        <div class="columna columna-33">
+          <div class="comentario-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Los pasteles de arroz son increíbles. Perfectos para la cena."</p>
+            <span class="comentario-autor">— Camilo Herrera</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ====== FORMULARIO DE NUEVO COMENTARIO ====== -->
+      <h3 style="margin-top:50px; color:rgb(70,165,135); text-align:center;">
+        Deja tu comentario
+      </h3>
+
+      <div class="row" style="justify-content:center;">
+        <div class="columna columna-50">
+          <form class="comentario-form">
+
+            <div class="form-block">
+              <input type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+
+            <div class="form-block">
+              <textarea class="form-control" placeholder="Escribe tu comentario..."></textarea>
+            </div>
+
+            <div class="form-block" style="text-align:center;">
+              <button class="boton boton-aqua" type="submit">Enviar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+
+</body>
+</html>
